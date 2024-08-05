@@ -1,0 +1,49 @@
+<div class="container">
+  <!-- Display the heading from the component -->
+  <div class="title">
+    {{heading}}
+  </div>
+
+  <!-- Form element bound to the profileForm FormGroup, with a submit handler -->
+  <form class="input-data" [formGroup]="profileForm" (ngSubmit)="onsubmit()">
+    <!-- Label and input for first name -->
+    <label class="underline" for="first-name">First name:</label>
+    <input id="first-name" type="text" formControlName="firstname">
+    
+    <!-- Label and input for last name -->
+    <label class="underline" for="last-name">Last name:</label>
+    <input id="last-name" type="text" formControlName="lastname">
+
+    <!-- Nested form group for address -->
+    <div formGroupName="address">
+      <h2>Address</h2>
+      
+      <!-- Label and input for street -->
+      <label for="street">Street:</label>
+      <input id="street" type="text" formControlName="street">
+      
+      <!-- Label and input for city -->
+      <label for="city">City:</label>
+      <input id="city" type="text" formControlName="city">
+      
+      <!-- Label and input for state -->
+      <label for="state">State:</label>
+      <input id="state" type="text" formControlName="state">
+      
+      <!-- Label and input for zip code -->
+      <label for="zip">Zip Code:</label>
+      <input id="zip" type="text" formControlName="zip">
+    </div>
+
+    <!-- Instruction for filling out the form -->
+    <p>
+      <li>fill out the form to enable the button</li>
+    </p>
+
+    <!-- Submit button, disabled until the form is valid -->
+    <button type="submit" [disabled]="!profileForm.valid">submit</button>
+
+    <!-- Button to update the profile -->
+    <button type="button" (click)="updateprofile()">Update profile</button>
+  </form>
+</div>

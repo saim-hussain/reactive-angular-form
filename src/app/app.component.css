@@ -1,0 +1,80 @@
+/* Container styling */
+.container {
+    background: #fff; /* White background */
+    width: 800px; /* Fixed width */
+    height: auto; /* Adjust height to fit content */
+    padding: 25px 40px; /* Padding inside the container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow with slight opacity */
+    margin: 150px auto; /* Center the container vertically and horizontally */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Title styling */
+.container .title {
+    text-align: center; /* Center-align the text */
+    font-family: sans-serif; /* Font family */
+    font-weight: bolder; /* Bold font weight */
+    font-size: 25px; /* Font size */
+    color: #000; /* Text color fallback */
+    -webkit-text-fill-color: transparent; /* Transparent text color */
+    background-repeat: no-repeat; /* No background repeat */
+    -webkit-background-clip: text; /* Clip background to text */
+    background-image: url('https://png.pngtree.com/background/20210712/original/pngtree-modern-double-color-futuristic-neon-background-picture-image_1181573.jpg'); /* Background image */
+}
+
+/* Form styling */
+.container form {
+    font-family: sans-serif; /* Font family */
+    font-weight: 300; /* Light font weight */
+}
+
+/* Label styling */
+.input-data label {
+    display: block; /* Block-level element */
+    margin: 10px 0 5px 0; /* Margin around the label */
+}
+
+/* Input styling */
+.input-data input {
+    display: block; /* Block-level element */
+    width: calc(100% - 20px); /* Adjust width to fit within container */
+    margin: 5px 0 10px 0; /* Margin around the input */
+    padding: 5px; /* Padding inside the input */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+/* Input focus styling */
+.input-data input:focus {
+    border-color: #007BFF; /* Border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Box shadow on focus */
+    outline: none; /* Remove default outline */
+    color: #007BFF; /* Text color on focus */
+}
+
+/* Heading (h2) styling */
+.container h2 {
+    font-weight: bold; /* Bold font weight */
+    font-size: medium; /* Medium font size */
+    margin-top: 20px; /* Top margin */
+}
+
+/* Paragraph styling */
+.container p {
+    font-family: sans-serif; /* Font family */
+    font-style: oblique; /* Oblique font style */
+    font-weight: bold; /* Bold font weight */
+}
+
+/* Button styling */
+.container button {
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+    margin-left: 32px; /* Left margin */
+}
+
+/* Button hover styling */
+.container button:hover {
+    color: rgb(138, 0, 103); /* Text color on hover */
+    border-color: rgb(138, 0, 103); /* Border color on hover */
+    outline: none; /* Remove default outline */
+}
